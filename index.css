@@ -1,17 +1,228 @@
-.navbar1{
-    height: 70px;
+/* navbar*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
     width: 100%;
-    background-color:white;
-    /* background-color: aqua; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 300px;
-    margin-top: 0%;
-    color:#53545ee5;
+    height: auto;
     position: sticky;
     top: 0;
+    background-color: white;
 }
+
+.head {
+    width: 90%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.second_ul{
+    background-color: white;
+} 
+.third_ul{
+    background-color: white;
+}
+.fourth_ul{
+    background-color: white;
+}
+.head_left {
+    width: 20%;
+}
+
+.head_left p {
+    font-size: 25px;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.head_right {
+    width: 55%;
+}
+
+.first_ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first_ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+.first_ul li a:hover {
+    color: blue;
+}
+
+.first_ul li {
+    list-style: none;
+}
+
+.second_ul {
+    display: block;
+}
+
+#checkbx {
+    display: none;
+}
+#checkbx2 {
+    display: none;
+}
+
+#checkbx3 {
+    display: none;
+}
+
+#checkbx4 {
+    display: none;
+}
+
+#bar {
+    display: none;
+}
+
+.second_ul {
+    display: none;
+}
+
+.third_ul {
+    display: none;
+}
+
+.fourth_ul {
+    display: none;
+}
+
+#checkbx2:checked~.second_ul {
+    width: 230px;
+    height: auto;
+    box-shadow: 0 8px 8px -4px gray;
+    display: block;
+    position:fixed;
+    top: 60px;
+    padding: 10px;
+    line-height: 25px;
+}
+#checkbx3:checked~.third_ul {
+    width: 120px;
+    height: auto;
+    box-shadow: 0 8px 8px -4px gray;
+    display: block;
+    position:fixed;
+    top: 60px;
+    padding: 10px;
+    line-height: 25px;
+}
+#checkbx4:checked~.fourth_ul {
+    width: 120px;
+    height: auto;
+    box-shadow: 0 8px 8px -4px gray;
+    display: block;
+    position:fixed;
+    top: 60px;
+    right:150px; 
+    padding: 10px;
+    line-height: 25px;
+}
+
+#check4_arrow{
+    text-indent: 40px;
+   
+}
+
+.search{
+    width: 245px;
+    height: 55px;
+    background-color:whitesmoke;
+    box-shadow: 0 8px 8px -4px gray;
+   
+}
+
+.search input,button{
+    height: 40px;
+    padding: 5px;
+}
+
+.search button{
+    background-color:rgb(70, 60, 181);
+    color: white;
+}
+
+.search{
+    display: none;
+}
+
+#mgf{
+    display: none;
+}
+
+#mgf:checked~.search{
+    display: block;
+    position: fixed;
+    top: 90px;
+    right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media screen and (max-width:1024px) {
+    .first_ul {
+        display: block;
+        position: fixed;
+        top: 100px;
+        top: -100%;
+        width: 100%;
+        height: 250px;
+        background-color: white;
+        transition: all .3s;
+        padding-top: 50px;
+        left: 5%;
+    }
+
+    .first_ul li {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+
+    #checkbx:checked~.first_ul {
+        top: 13%;
+    }
+
+    #bar {
+        display: block;
+    }
+
+    .head_left {
+        width: 100%;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:280px) {
+    #mgf:checked~.search{
+        right: 20px;
+    }
+   
+}
+
+
+@media screen and (max-width:360px) {
+    #checkbx:checked~.first_ul {
+        top: 13%;
+    }
+}
+
 .list-items{
     margin: 10px;
     padding: 10px 5px;
@@ -351,7 +562,7 @@
     transition: transform 0.8s ease-in-out;
     width: 90%;
     /* margin-right: 20rem; */
-    margin-left: 15rem;
+    margin-left: 15rem;                                                                                                                                                                                                
 }
 
 .slides {
@@ -386,7 +597,7 @@
     background-image: url('https://cdn.pixabay.com/photo/2017/02/09/12/07/ocean-2051760_640.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center908;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
@@ -416,6 +627,7 @@
     background-color:rgb(98, 98, 239); ;
     color: white;
 }
+
 .div-footer{
     height: 180px;
     display: flex;

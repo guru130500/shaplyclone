@@ -10,20 +10,69 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
 </head>
 <body>
-    <div class="navbar1">
-        <div class="logo">Shaply Demo</div>
-        <div class="navlist">
-            <ul class="list">
-                <li class="list-items">HOME</li>
-                <li class="list-items">BLOG</li>
-                <li class="list-items">PORTFOLIO</li>
-                <li class="list-items">ABOUTTHETESTS</li>
-                <li class="list-items">LEVEL1</li>
-                <li class="list-items">SHOP</li>
-                <li class="list-items">SEARCH</li>
-            </ul>
+    <!-- .............................. -->
+    
+    <nav class="navbar">
+        <div class="head">
+          <div class="head_left">
+              <p>Shapely Demo</p>
+          </div>
+          <div class="head_right">
+              <input type="checkbox" id="checkbx">
+              <ul class="first_ul">
+                  <li><a href="#">HOME</a> </li>
+                  <li><a href="./Blog.htm">BLOG</a></li>
+                  <li><a href="./Portfolio.htm">PORTFOLIO</a></li>
+                  <li><a href="./AboutTheTest.htm">ABOUTTHETESTS <label for="checkbx2"><i class="fa-solid fa-chevron-down"></i></label></a>
+                      <input type="checkbox" id="checkbx2">
+                      <ul class="second_ul sec_commul">
+                          <li><a href="">Page Image Alignment</a></li>
+                          <li><a href="">Page Markup And Formatting</a></li>
+                          <li><a href="">Clearing Floats</a></li>
+                          <li><a href="">Page With Comments</a></li>
+                          <li><a href="">Page With Comments disabled</a></li>
+                      </ul>
+                  </li>
+  
+  
+                  <li><a href="./Level1.htm">LEVEL1  <label for="checkbx3"><i class="fa-solid fa-chevron-down"></i></label></a>
+                      <input type="checkbox" id="checkbx3">
+                      <ul class="third_ul thi_commul">
+                          <li><a href="">Level2<label for="checkbx4" id="check4_arrow"><i class="fa-solid fa-chevron-right"></i></label></a>
+                              <input type="checkbox" id="checkbx4">
+                              <ul class="fourth_ul fou_commul">
+                                  <li><a href="">Level3</a></li>
+                                  <li><a href="">Level3a</a></li>
+                                  <li><a href="">Level3b</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="">Level2a</a></li>
+                          <li><a href="">Level2b</a></li>
+                      </ul>
+                  </li>
+  
+  
+                  <li><a href="./shop.htm">SHOP</a></li>
+                  <li>
+                     <label for="mgf"> <i class="fa-solid fa-magnifying-glass"></i></label>
+                     <input type="checkbox" id="mgf" >
+                     <div class="search">
+                      <input type="text" placeholder="Type Here..">
+                      <button>Search</button>
+                     </div>
+                     
+                  </li>
+              </ul>
+          </div>
+  
+          <div id="bar">
+              <label for="checkbx"><i class="fa-solid fa-bars"></i></label>
+          </div>
         </div>
-    </div>
+      </nav>
+
+
+    <!-- ................................... -->
     <div class="header">
         <div class="header-innerdiv1">We Change Everything WordPress</div>
         <div class="header-innerdiv2">This is the only WordPress theme you will ever want to use.</div>
@@ -172,6 +221,7 @@
         <p class="last-div-para">Do you like this awesome WordPress theme?</p>
         <button class="last-div-btn">DOWNLOAD NOW</button>
     </div>
+    
     <div class="div-footer">
         <div class="div-footer-para">
         <p class="footer-para">Theme by Colorlib Powered by WordPress</p>

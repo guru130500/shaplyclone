@@ -1,0 +1,535 @@
+/* Navbar*/
+/* navbar*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.head {
+    width: 90%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.second_ul{
+    background-color: white;
+} 
+.third_ul{
+    background-color: white;
+}
+.fourth_ul{
+    background-color: white;
+}
+.head_left {
+    width: 20%;
+}
+
+.head_left p {
+    font-size: 25px;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.head_right {
+    width: 55%;
+}
+
+.first_ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first_ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+.first_ul li a:hover {
+    color: blue;
+}
+
+.first_ul li {
+    list-style: none;
+}
+
+.second_ul {
+    display: block;
+}
+
+#checkbx {
+    display: none;
+}
+#checkbx2 {
+    display: none;
+}
+
+#checkbx3 {
+    display: none;
+}
+
+#checkbx4 {
+    display: none;
+}
+
+#bar {
+    display: none;
+}
+
+.second_ul {
+    display: none;
+}
+
+.third_ul {
+    display: none;
+}
+
+.fourth_ul {
+    display: none;
+}
+
+#checkbx2:checked~.second_ul {
+    width: 230px;
+    height: auto;
+    box-shadow: 0 8px 8px -4px gray;
+    display: block;
+    position:fixed;
+    top: 60px;
+    padding: 10px;
+    line-height: 25px;
+}
+#checkbx3:checked~.third_ul {
+    width: 120px;
+    height: auto;
+    box-shadow: 0 8px 8px -4px gray;
+    display: block;
+    position:fixed;
+    top: 60px;
+    padding: 10px;
+    line-height: 25px;
+}
+#checkbx4:checked~.fourth_ul {
+    width: 120px;
+    height: auto;
+    box-shadow: 0 8px 8px -4px gray;
+    display: block;
+    position:fixed;
+    top: 60px;
+    right:150px; 
+    padding: 10px;
+    line-height: 25px;
+}
+
+#check4_arrow{
+    text-indent: 40px;
+   
+}
+
+.search{
+    width: 245px;
+    height: 55px;
+    background-color:whitesmoke;
+    box-shadow: 0 8px 8px -4px gray;
+   
+}
+
+.search input,button{
+    height: 40px;
+    padding: 5px;
+}
+
+.search button{
+    background-color:rgb(70, 60, 181);
+    color: white;
+}
+
+.search{
+    display: none;
+}
+
+#mgf{
+    display: none;
+}
+
+#mgf:checked~.search{
+    display: block;
+    position: fixed;
+    top: 90px;
+    right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media screen and (max-width:1024px) {
+    .first_ul {
+        display: block;
+        position: fixed;
+        top: 100px;
+        top: -100%;
+        width: 100%;
+        height: 250px;
+        background-color: white;
+        transition: all .3s;
+        padding-top: 50px;
+        left: 5%;
+    }
+
+    .first_ul li {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+
+    #checkbx:checked~.first_ul {
+        top: 13%;
+    }
+
+    #bar {
+        display: block;
+    }
+
+    .head_left {
+        width: 100%;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:280px) {
+    #mgf:checked~.search{
+        right: 20px;
+    }
+   
+}
+
+
+@media screen and (max-width:360px) {
+    #checkbx:checked~.first_ul {
+        top: 13%;
+    }
+}
+
+
+
+
+
+
+.main1{
+    height: 200px;
+    width: 100%;
+    background-color: rgba(246, 245, 245, 0.923)
+}
+.main1-para
+{
+    position: relative;
+    top: 70px;
+    left: 150px;
+    font-size: 30px;
+}
+.main2{
+    margin-top: 90px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.main2-div1{
+    height: auto;
+      width: 750px;
+    /* background-color: red; */
+}
+.main2-div2{
+    height:1500px;
+    width: 400px;
+    /* background-color: yellow; */
+}
+.main2-div2-img{
+    height: 515px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    background-image: url('https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1453282716202-de94e528067c-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main2-div2-img-news{
+    height: 70px;
+    width: 345px;
+  background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+.news-para1:hover{
+    color: rgb(48, 48, 232);
+}
+.inner-para1{
+    font-size: 40px;
+    margin-bottom: 7px;
+    color: rgb(2, 1, 44);;
+}
+.inner-para2{
+    margin-top: 7px;
+    color: rgb(152, 150, 150);;
+    
+}
+.inner-para4{
+    margin-top: 30px;
+    color: rgb(152, 150, 150);;
+}
+.inner-para2,.inner-para3,.main2-div2-para2{
+    color:rgb(152, 150, 150); ;
+}
+#card{
+    height: auto;
+    width: 355px;
+    /* background-color:green; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main2-div2-cards{
+    margin-top: 50px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+/* Card 1*/
+
+.card-div1{
+    height: 250px;
+    width: 100%;
+    background-image: url('https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1440557653082-e8e186733eeb-1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.card-innerdiv-news{
+    font-size: 12px;
+    height: 56px;
+    width: 260px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-para-news:hover{
+    color:rgb(48, 48, 232);
+    
+}
+.card-para1{
+    font-size: 42px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+.card1-button{
+    height: 40px;
+    width: 145px;
+    margin-top: 9px;
+    color: white;
+    background-color:rgb(126, 126, 255); ;
+    border-color:rgb(131, 131, 255); ;
+}
+
+/* Card2 */
+
+.card-div2{
+    height: 250px;
+    width: 100%;
+    background-image: url('https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1449168013943-3a15804bb41c-1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+.card-div3,.card-div4,.card-div5,.card-div6,.card-div7,.card-div8,.card-div9,.card-div10,.card-div11{
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+.card-div3{
+    background-image: url('https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1443527216320-7e744084f5a7-2.jpg');
+}
+
+.card-div4{
+    background-image: url('https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1444858345149-8ff40887589b-1.jpg');
+}
+
+.card-div5{
+    background-image: url('https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1434871619871-1f315a50efba-1.jpg');
+}
+
+.card-div6{
+    background-image: url('https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1434472007488-8d47f604f644-1.jpg');
+}
+
+.card-div7{
+    background-image: url('https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1444760134166-9b8f7d0fc038-1.jpg');
+}
+
+.card-div8{
+    background-image: url('https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1448518184296-a22facb4446f-1.jpg');
+}
+
+.card-div9{
+    background-image: url('https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1430329429612-babb42f88673-1.jpg');
+}
+
+.card-div10{
+    background-image: url('https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1433878455169-4698e60005b1-1.jpg ');
+}
+
+.card-div11{
+    background-image: url('https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1431492299426-2ea1ce429cc0-1.jpg');
+}
+#card3-para1{
+    width: 300px;
+}
+#card6-para1{
+    width: 350px;
+}
+.card-para2,.card-para3,.card-para4{
+    color: rgb(152, 150, 150);
+}
+.card-para1{
+    color:rgb(2, 1, 44); ;
+}
+
+
+/* blog Footer  */
+
+.blog-footer-div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+   border: 1px solid rgba(233, 229, 229, 0.923); ;
+   height: 47px;
+}
+.blog-footer-div1:hover{
+    border: 1px solid rgb(48, 48, 252);;
+}
+.footer-input{
+    height: 95%;
+    width: 80%;
+    border: none;
+}
+.footer-heading1{
+    color: rgb(2, 1, 44);;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+#footer-img{
+    height: 40px;
+    width: 40px;
+}
+.footer-div-content{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.footer-span{
+    color: rgb(105, 105, 252);;
+}
+.footer-span:hover{
+    color: rgb(48, 48, 252);
+}
+.footer-content-para{
+    border-bottom: 1px solid rgba(233, 229, 229, 0.923);
+    padding-bottom: 25px;
+    color:rgb(152, 150, 150); ;
+}
+
+/*      footer    */
+.div-footer{
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(16, 14, 24);;
+    gap: 500px;
+}
+.footer-list{
+    display: flex;
+    color: white;
+    list-style: none;
+    
+}
+.footer-list-item{
+    padding: 10px;
+   margin-left: 7px;
+  
+}
+.media-anchor{
+      color: white;
+}
+
+.footer-para{
+    font-size: 18px;
+    color: #d6d8dae5
+}
+
+@media screen and (max-width:780px) {
+    #card{
+        height: 5s00px;
+        width: 100%;
+    }
+    .card-div1,.card-div2,.card-div3,.card-div4,.card-div5,.card-div6,.card-div7,.card-div8,.card-div9,.card-div10,.card-div11{
+        height: 400px
+    }
+    .card-para1,#card3-para1,#card6-para1{
+        width: 100%;
+        
+    }
+    .blog-footer-div1{
+        width: 100%;
+    }
+    .footer-input{
+        width: 100%;
+    }
+    .div-footer{
+        gap: 20px;
+       }
+       .main2{
+        flex-direction: column;
+        
+       }
+        .blog-footer-div1{
+        width: 100%;
+     }
+     .main2-div2{
+        margin-left: 10px;
+     }
+}
+

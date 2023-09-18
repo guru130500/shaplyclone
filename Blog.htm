@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- ................................................ -->
+    
+    <nav class="navbar">
+        <div class="head">
+          <div class="head_left">
+              <p>Shapely Demo</p>
+          </div>
+          <div class="head_right">
+              <input type="checkbox" id="checkbx">
+              <ul class="first_ul">
+                  <li><a href="./index.htm">HOME</a> </li>
+                  <li><a href="#">BLOG</a></li>
+                  <li><a href="./Portfolio.htm">PORTFOLIO</a></li>
+                  <li><a href="./AboutTheTest.htm">ABOUTTHETESTS <label for="checkbx2"><i class="fa-solid fa-chevron-down"></i></label></a>
+                      <input type="checkbox" id="checkbx2">
+                      <ul class="second_ul sec_commul">
+                          <li><a href="">Page Image Alignment</a></li>
+                          <li><a href="">Page Markup And Formatting</a></li>
+                          <li><a href="">Clearing Floats</a></li>
+                          <li><a href="">Page With Comments</a></li>
+                          <li><a href="">Page With Comments disabled</a></li>
+                      </ul>
+                  </li>
+  
+  
+                  <li><a href="./Level1.htm">LEVEL1  <label for="checkbx3"><i class="fa-solid fa-chevron-down"></i></label></a>
+                      <input type="checkbox" id="checkbx3">
+                      <ul class="third_ul thi_commul">
+                          <li><a href="">Level2<label for="checkbx4" id="check4_arrow"><i class="fa-solid fa-chevron-right"></i></label></a>
+                              <input type="checkbox" id="checkbx4">
+                              <ul class="fourth_ul fou_commul">
+                                  <li><a href="">Level3</a></li>
+                                  <li><a href="">Level3a</a></li>
+                                  <li><a href="">Level3b</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="">Level2a</a></li>
+                          <li><a href="">Level2b</a></li>
+                      </ul>
+                  </li>
+  
+  
+                  <li><a href="./shop.htm">SHOP</a></li>
+                  <li>
+                     <label for="mgf"> <i class="fa-solid fa-magnifying-glass"></i></label>
+                     <input type="checkbox" id="mgf" >
+                     <div class="search">
+                      <input type="text" placeholder="Type Here..">
+                      <button>Search</button>
+                     </div>
+                     
+                  </li>
+              </ul>
+          </div>
+  
+          <div id="bar">
+              <label for="checkbx"><i class="fa-solid fa-bars"></i></label>
+          </div>
+        </div>
+      </nav>
+
+
+    <!-- ..................................................... -->
+    <div class="main1">
+        <p class="main1-para">Blog</p>
+    </div>
+    <div class="main2">
+        <div class="main2-div1">
+            <div class="main2-div2-img">
+                <div class="main2-div2-img-news">
+                    <p class="news-para1">NEWS</p>
+                </div>
+            </div>
+            <div class="main2-div2-para">
+                <div class="main2-div2-para1">
+                    <p class="inner-para1">Template: Sticky</p>
+                    <p class="inner-para2">January 7, 2016October 21, 2020by | Aigars</p>
+                    <p class="inner-para3">This is a sticky post.</p>
+                    <p class="inner-para4">There are a few things to verify:</p>
+                </div>
+                <div class="main2-div2-para2">
+                    <ul>
+                        <li>The sticky post should be distinctly recognizable in some way in comparison to normal posts. You can style the .sticky class if you are using the post_class() function to generate your post classes, which is a best practice.</li>
+                        <li>They should show at the very top of the blog index page, even though they could be several posts back chronologically.</li>
+                        <li>They should still show up again in their chronologically correct postion in time, but without the sticky indicator.</li>
+                        <li>If you have a plugin or widget that lists popular posts or comments, make sure that this sticky post is not always at the top of those lists unless it really is popular.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main2-div2-cards">
+                <div id="card" class="card1">
+                    <div class="card-div1">
+                        <div class="card-innerdiv-news">
+                            <p class="card-para-news">NEWS</p>
+                        </div>
+                    </div>
+                    <p class="card-para1">Template: More Tag</p>
+                    <p class="card-para2">March 15, 2016October 21, 2020by Aigars</p>
+                    <p class="card-para3">This content is before the more tag.</p>
+                    <p class="card-para4">Right after this sentence should be a “continue reading” button of some sort.</p>
+                    <button class="card1-button">Read More</button>
+                </div>
+                <div id="card" class="card2">
+                    <div class="card-div2">
+                        <div class="card-innerdiv-news">
+                            <p class="card-para-news">NEWS</p>
+                        </div>
+                       
+                    </div>
+                    <p class="card-para1">Hello World!</p>
+                    <p class="card-para2">February 23, 2016October 21, 2020by Aigars</p>
+                    <p class="card-para3">Welcome to colorlib.com. This is your first post. Edit or delete it, then start blogging!</p>
+                </div>
+                <div id="card" class="card3">
+                    <div class="card-div3">
+                        <div class="card-innerdiv-news">
+                            <p class="card-para-news">NEWS</p>
+                        </div>
+                    </div>
+                    <p id="card3-para1" class="card-para1">Markup: HTML Tags and Formatting</p>
+                    <p class="card-para2">January 11, 2016October 21, 2020by Aigars</p>
+                    <p class="card-para3">HTML Tags and Formatting</p>
+                    <button class="card1-button">Read More</button>
+                </div>
+                <div id="card" class="card4">
+                    <div class="card-div4">
+                        <div class="card-innerdiv-news">
+                            <p class="card-para-news">NEWS</p>
+                        </div>
+                    </div>
+                    <p id="card3-para1" class="card-para1">Markup: Image Alignment</p>
+                    <p class="card-para2">January 10, 2016October 21, 2020by Aigars</p>
+                    <p class="card-para3">Welcome to image alignment! The best way to demonstrate the ebb and flow of the various image positioning options is to nestle them snuggly among an ocean of words. Grab a paddle and let’s get started.</p>
+                    <button class="card1-button">Read More</button>              
+                </div>
+                <div id="card" class="card5">
+                    <div class="card-div5">
+                        <div class="card-innerdiv-news">
+                            <p class="card-para-news">NEWS</p>
+                        </div>
+                    </div>
+                    <p id="card3-para1" class="card-para1">Markup: Text Alignment</p>
+                    <p class="card-para2">January 9, 2016October 21, 2020by Aigars</p>
+                    <p class="card-para3">This is a paragraph. It should not have any alignment of any kind. It should just flow like you would normally expect. Nothing fancy. Just straight up text, free flowing, with love. Completely neutral and not picking a side or sitting on the fence. It just is. It just freaking is. It likes where it is. It does not feel compelled to pick a side. Leave him be. It will just be better that way. Trust me.</p>
+                    <button class="card1-button">Read More</button>                   
+                </div>
+                <div id="card" class="card6">
+                    <div class="card-div6">
+                        <div class="card-innerdiv-news">
+                            <p class="card-para-news">NEWS</p>
+                        </div>
+                    </div>
+                    <p id="card6-para1" class="card-para1">Markup: Title With Special Characters</p>
+                    <p class="card-para2">January 5, 2016October 21, 2020by Aigars</p>
+                    <p class="card-para3">Putting special characters in the title should have no adverse effect on the layout or functionality.</p>
+                    <button class="card1-button">Read More</button> 
+                </div>
+                <div id="card" class="card7">
+                    <div class="card-div7">
+                        <div class="card-innerdiv-news">
+                            <p class="card-para-news">NEWS</p>
+                        </div>
+                    </div>
+                    <p id="card6-para1" class="card-para1">Markup: Title With Markup</p>
+                    <p class="card-para2">January 5, 2016October 21, 2020by Aigars</p>
+                    <button class="card1-button">Read More</button> 
+                </div>
+                <div id="card" class="card8">
+                    <div class="card-div8">
+                        <div class="card-innerdiv-news">
+                            <p class="card-para-news">NEWS</p>
+                        </div>
+                    </div>
+                    <p id="card6-para1" class="card-para1">Edge Case: Nested And Mixed Lists</p>
+                    <p class="card-para2">May 15, 2015October 21, 2020by Aigars</p>
+                    <p class="card-para3">Nested and mixed lists are an interesting beast. It’s a corner case to make sure that</p>
+                    <button class="card1-button">Read More</button> 
+                </div>
+                <div id="card" class="card9">
+                    <div class="card-div9">
+                        <div class="card-innerdiv-news">
+                            <p class="card-para-news">NEWS</p>
+                        </div>
+                    </div>
+                    <p id="card6-para1" class="card-para1">Template: Featured Image (Vertical)</p>
+                    <p class="card-para2">March 15, 2015October 21, 2020by Aigars</p>
+                    <p class="card-para3">This post should display a featured image, if the theme supports it.</p>
+                    <p class="card-para3">Non-square images can provide some unique styling issues.</p>
+                    <p class="card-para3">This post tests a vertical featured image.</p>
+                </div>
+                <div id="card" class="card10">
+                    <div class="card-div10">
+                        <div class="card-innerdiv-news">
+                            <p class="card-para-news">NEWS</p>
+                        </div>
+                    </div>
+                    <p id="card6-para1" class="card-para1">Template: Featured Image (Vertical)</p>
+                    <p class="card-para2">March 15, 2015October 21, 2020by Aigars</p>
+                    <p class="card-para3">This post should display a featured image, if the theme supports it.</p>
+                    <p class="card-para3">Non-square images can provide some unique styling issues.</p>
+                    <p class="card-para3">This post tests a horizontal featured image.</p>
+                </div>
+                <div id="card" class="card11">
+                    <div class="card-div11">
+                        <div class="card-innerdiv-news">
+                            <p class="card-para-news">NEWS</p>
+                        </div>
+                    </div>
+                    <p id="card6-para1" class="card-para1">Template: Excerpt (Defined)</p>
+                    <p class="card-para2">March 15, 2015October 21, 2020by Aigars</p>
+                    <p class="card-para3">This is the post content. It should be displayed in place of the user-defined excerpt in single-page views.</p>
+                </div>
+            </div>
+        </div>
+ <!-- .................................................................................................. -->
+      <!-- blog-footer -->
+
+        <div class="main2-div2">
+            <div class="blog-footer-div1">
+                <input type="text" class="footer-input" placeholder="Type Here"> |
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <p class="footer-heading1">Top Posts</p>
+            <div class="blog-footer-div2">
+                <div class="footer-div-content"> <img id="footer-img" src="https://i0.wp.com/colorlibhub.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1453282716202-de94e528067c-1.jpg?resize=60%2C60&ssl=1" alt="">
+                    <span class="footer-span">Template: Sticky</span>
+                </div>
+                <div class="footer-div-content"> <img id="footer-img" src="https://i0.wp.com/colorlibhub.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1434472007488-8d47f604f644-1.jpg?resize=60%2C60&ssl=1" alt="">
+                     <span class="footer-span">Markup: Title With Special Characters</span>
+                </div>
+                <div class="footer-div-content"> <img id="footer-img" src="https://i0.wp.com/colorlibhub.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1440557653082-e8e186733eeb-1.jpg?resize=60%2C60&ssl=1" alt="">
+                     <span class="footer-span">Template: More Tag</span>
+                </div>
+                <div class="footer-div-content"> <img id="footer-img" src="https://i0.wp.com/colorlibhub.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1444858345149-8ff40887589b-1.jpg?resize=60%2C60&ssl=1" alt="">
+                     <span class="footer-span">Markup: Image Alignment</span> 
+                </div>
+                <div class="footer-div-content"> <img id="footer-img" src="https://i0.wp.com/colorlibhub.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1444858345149-8ff40887589b-1.jpg?resize=60%2C60&ssl=1" alt="">
+                     <span class="footer-span">Markup: HTML Tags and Formatting</span>
+                </div>
+                <div class="footer-div-content"> <img id="footer-img" src="https://i0.wp.com/colorlibhub.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1449168013943-3a15804bb41c-1.jpg?resize=60%2C60&ssl=1" alt="">
+                     <span class="footer-span">Hello world!</span>
+                </div>
+            </div>
+            <div class="blog-footer-div3">
+                <p class="footer-heading1">Recent Posts</p>
+                <P class="footer-content-para">Template: More Tag</P>
+                <P class="footer-content-para">Hello world!</P>
+                <P class="footer-content-para">Markup: HTML Tags and Formatting</P>
+                <P class="footer-content-para">Markup: Image Alignment</P>
+                <P class="footer-content-para">Markup: Text Alignment</P>
+                <p class="footer-heading1">Categories</p>
+                <p class="footer-content-para">Edge Case</p>
+                <p class="footer-content-para">Markup</p>
+                <p class="footer-content-para">Media</p>
+                <p class="footer-content-para">News</p>
+                <p class="footer-content-para">Post Formats</p>
+                <p class="footer-content-para">Template</p>
+            </div>
+        </div>
+    </div>
+     <!-- ........footer........... -->
+     
+    <div class="div-footer">
+        <div class="div-footer-para">
+        <p class="footer-para">Theme by Colorlib Powered by WordPress</p>
+        </div>
+        <div class="footer-list">
+            <div class="footer-list-item"> <a class="media-anchor" href="#"><i class="fa-brands fa-facebook"></i></a></div>
+            <div class="footer-list-item"> <a class="media-anchor" href="#"><i class="fa-brands fa-twitter"></i></a></div>
+            <div class="footer-list-item"> <a class="media-anchor" href="#"><i class="fa-brands fa-linkedin"></i> </a></div>
+            <div class="footer-list-item"> <a class="media-anchor" href="#"><i class="fa-brands fa-youtube"></i></a></div>
+            <div class="footer-list-item"> <a class="media-anchor" href="#"><i class="fa-brands fa-instagram"></i></a></div>
+        </div>
+        
+    </div>
+</body>
+</html>
