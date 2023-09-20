@@ -229,15 +229,22 @@
 .main1{
     height: 200px;
     width: 100%;
-    background-color: rgba(246, 245, 245, 0.923)
+    display: flex;
+    
+   align-items: center;
+   
+    background-color: rgba(246, 245, 245, 0.923);
+    
+    
 }
+
 .main1-para
 {
-    position: absolute;
-    left: 190px;
-    top:130px ;
+  
+    font-size: 35px;
+  margin-left:190px;
+  margin-top: 5px;
     
-    font-size: 30px;
 }
 
 .main5-innerdiv{
@@ -319,7 +326,10 @@
 
 @media screen and (max-width:780px) {
  
-    
+    .first_ul{
+        background-color: white;
+     
+    }
     .footer-input{
         width: 100%;
     }
@@ -330,7 +340,84 @@
         width: 100%;
        }
        .main5-innerdiv{
-        height: 330px;
-        width: 70%;
+        height: 300px;
+        width: 80%;
        }
+           
+       
+    .main1-para
+    {
+      
+        font-size: 30px;
+      margin-left:130px;
+      margin-top: 5px;
+        
+    }
+
+
+       /* footer section */
+.footer-list-item{
+    margin-left: 2px;
+    font-size: 12px;
+}
+.footer-para{
+    font-size: 12px;
+    
+}
+.div-footer{
+    flex-direction: column;
+    
+}
+  
+#checkbx2:checked~.second_ul {
+    width: 150px;
+    height: auto;
+    /* box-shadow: 0 8px 8px -4px rgb(222, 18, 18); */
+    display: block;
+    position:fixed;
+    top: 120px;
+    left: 180px;
+    padding: 5px;
+    line-height:10px
+}
+#checkbx3:checked~.third_ul {
+    width: 112px;
+    height: auto;
+    /* box-shadow: 0 8px 8px -4px rgb(225, 231, 40); */
+    display: block;
+    position:fixed;
+    top: 320px;
+    left: 100px;
+    padding: 3px;
+    line-height: 10px;
+}
+#checkbx4:checked~.fourth_ul {
+    width: 90px;
+    height: auto;
+    /* box-shadow: 0 8px 8px -4px rgb(8, 8, 176); */
+    display: block;
+    position:fixed;
+    top: 320px;
+    right:60px; 
+    padding: 8px;
+    line-height: 8px;
+}
+ 
+#mgf:checked~.search{
+    display: block;
+    position: fixed;
+    top: 390px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+
+}
+.first_ul{
+   
+    height: 380px;
+    width: 320px;
+    
+}
 }

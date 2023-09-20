@@ -2,14 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    /* border: 1px solid red; */
 }
+
 
 .navbar {
     width: 100%;
     height: auto;
-    position: sticky;
+    position:sticky;
     top: 0;
     background-color: white;
+    
 }
 
 .head {
@@ -22,12 +26,15 @@
 }
 .second_ul{
     background-color: white;
+    z-index: 1;
 } 
 .third_ul{
     background-color: white;
+    z-index:3;
 }
 .fourth_ul{
     background-color: white;
+    z-index: 3;
 }
 .head_left {
     width: 20%;
@@ -172,6 +179,7 @@
 
 }
 
+
 @media screen and (max-width:1024px) {
     .first_ul {
         display: block;
@@ -224,18 +232,27 @@
 
 
 
+
+
 .main1{
     height: 200px;
     width: 100%;
-    background-color: rgba(246, 245, 245, 0.923)
+    display: flex;
+    
+   align-items: center;
+   
+    background-color: rgba(246, 245, 245, 0.923);
+    
+    
 }
+
 .main1-para
 {
-    position: absolute;
-    left: 190px;
-    top:130px ;
+  
+    font-size: 35px;
+  margin-left:190px;
+  margin-top: 5px;
     
-    font-size: 30px;
 }
 
 .main2{
@@ -382,4 +399,100 @@
      .footer-input{
         width: 80%;
      }
+
+
+
+     /*  footer section */
+     .footer-list-item{
+        margin-left: 2px;
+        font-size: 12px;
+    }
+    .footer-para{
+        font-size: 12px;
+        
+    }
+    .div-footer{
+        flex-direction: column;
+        
+    }
+    .main1-para
+    {
+      
+        font-size: 30px;
+      margin-left:130px;
+      margin-top: 5px;
+        
+    }
+      
+#checkbx2:checked~.second_ul {
+    width: 150px;
+    height: auto;
+    /* box-shadow: 0 8px 8px -4px rgb(222, 18, 18); */
+    display: block;
+    position:fixed;
+    top: 100px;
+    left:190px;
+    padding: 5px;
+    line-height:10px;
+  
+}
+#checkbx3:checked~.third_ul {
+    width: 125px;
+    height: auto;
+    /* box-shadow: 0 8px 8px -4px rgb(225, 231, 40); */
+    display: block;
+  
+    position:fixed;
+    top: 320px;
+    left: 110px;
+    padding: 3px;
+    line-height: 10px;
+}
+#checkbx4:checked~.fourth_ul {
+    width: 90px;
+    height: auto;
+    /* box-shadow: 0 8px 8px -4px rgb(8, 8, 176); */
+    display: block;
+    position:fixed;
+    top: 318px;
+    right:55px; 
+    padding: 8px;
+    line-height: 8px;
+}
+ 
+#mgf:checked~.search{
+    display: block;
+    position: fixed;
+    top: 390px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+
+}
+.second_ul>li>a{
+    
+    position: relative;
+    right: 80px;
+}
+.first_ul{
+ /* border: 1px solid red; */
+ width: 310px;
+ height: 380px;
+
+ right: 50px;
+ margin-top: 0px;
+ 
+}
+.first_ul>li{
+   margin-left: 10px;
+
+}
+.third_ul>li{
+    margin-left: 10px;
+}
+.fourth_ul>li{
+    margin-left: 10px;
+}
 }

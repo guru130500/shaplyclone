@@ -446,7 +446,7 @@
 /* Sliders code*/ 
 
 .testimonial {
-    background-image: url("slider.jpg");
+    /* background-image: url("slider.jpg"); */
     width: 100%;
     background-attachment: fixed;
     background-size: cover;
@@ -455,8 +455,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    position: relative;
+    /* overflow: hidden; */
+    /* position: relative; */
 }
 
 .testimonial .text {
@@ -484,6 +484,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .slide {
@@ -504,6 +505,7 @@
     /* height: auto; */
     margin: bottom 15px;
     margin-top: 2rem;
+    
 }
 
 .active-slide {
@@ -660,7 +662,7 @@
 
 @media screen and (max-width:780px){
    .div-footer{
-    gap: 20px;
+    gap: 10px;
    }
     .main1,.main2{
         height: auto;
@@ -668,14 +670,17 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        gap: 30px;
+        gap: 5px;
 
     }
     .main1-div1,.main2-div2{
-        height: 335px;
-        width: 490px;
+        height: 240px;
+        width: 320px;
         
         /* border: 1px solid red; */
+    }
+    .main1-div1{
+        margin-top: 50px;
     }
     .main1-div2,.main2-div1{
         height: 260px;
@@ -701,17 +706,27 @@
     }
     .main1-div2-heading{
         font-size: 25px;
+        
+        
     }
     .main1-para{
         font-size: 10px;
+        margin-top: 25px;
+        margin-bottom: 20px;
     }
     .header-innerdiv1{
     
-        font-size: 25px;
+        font-size: 30px;
+        text-align: center;
         color: white;
     }
     .header-innerdiv2{
-        font-size: 10px;
+        font-size: 11px;
+    }
+    .header-innerdiv3{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
     
 .header{
@@ -724,11 +739,12 @@
 
 .main3-div1{
     height: 40px;
-    width: 60%;
+    width: 90%;
     margin: 15px;
+    margin-bottom: 60px;
     text-align: center;
     color: white;
-     font-size: 10px;
+     font-size: 16px;
 }
 .main4-div1{
    
@@ -746,7 +762,7 @@
 }
 
 .main4-div4{
-    height: 360px;
+    height: 300px;
     width: 100%;
 }
 .main5-div1{
@@ -762,7 +778,7 @@
 
 }
 .main5-innerdiv{
-    height: 380px;
+    height: 300px;
     width: 100%;
 
   
@@ -812,8 +828,13 @@
     
 }
 .slides img {
-    width: 30%;
+    width: 50%;
     
+}
+
+.slider{
+   
+    margin-left: 20px;
 }
 
 /* last-div */
@@ -823,13 +844,103 @@
     height: 240px;
 }
 .last-div-para{
-    font-size: 22px;
-    margin-bottom: 2px;
+    font-size: 18px;
+    margin-bottom: 3px;
 }
 .last-div-btn{
-    height: 45px;
-    width: 75%;
+    height: 38px;
+    width: 70%;
 }
+
+
+
+
+/*..............................*/
+
+.footer-list-item{
+    margin-left: 2px;
+    font-size: 12px;
+}
+.footer-para{
+    font-size: 12px;
+    
+}
+.div-footer{
+    flex-direction: column;
+}
+
+
+/*    navbar*/
+
+.first_ul{
+    height: auto;
+    width: 90%;
+    
+}
+.second_ul{
+    padding: 10px;
+}
+.second_ul li{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+  
+#checkbx2:checked~.second_ul {
+    width: 150px;
+    height: auto;
+    /* box-shadow: 0 8px 8px -4px rgb(222, 18, 18); */
+    display: block;
+    position:fixed;
+    top: 120px;
+    left: 180px;
+    padding: 5px;
+    line-height:10px
+}
+#checkbx3:checked~.third_ul {
+    width: 112px;
+    height: auto;
+    /* box-shadow: 0 8px 8px -4px rgb(225, 231, 40); */
+    display: block;
+    position:fixed;
+    top: 320px;
+    left: 100px;
+    padding: 3px;
+    line-height: 10px;
+}
+#checkbx4:checked~.fourth_ul {
+    width: 90px;
+    height: auto;
+    /* box-shadow: 0 8px 8px -4px rgb(8, 8, 176); */
+    display: block;
+    position:fixed;
+    top: 320px;
+    right:60px; 
+    padding: 8px;
+    line-height: 8px;
+}
+ 
+#mgf:checked~.search{
+    display: block;
+    position: fixed;
+    top: 390px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+
+}
+.first_ul{
+   
+    height: 380px;
+    width: 320px;
+    
+}
+
+
 }
 
  
